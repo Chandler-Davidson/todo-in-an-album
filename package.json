@@ -1,0 +1,21 @@
+{
+  "name": "web-app-template",
+  "version": "1.0.0",
+  "description": "A template for web app projects using the best tools!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandler-davidson/web-app-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chandler-davidson/web-app-template/issues"
+  },
+  "homepage": "https://github.com/chandler-davidson/web-app-template#readme",
+  "dependencies": {
+  }
+}
