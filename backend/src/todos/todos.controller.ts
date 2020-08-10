@@ -1,10 +1,9 @@
-import { Controller, Post, Body, Get, Patch, Delete, Param } from '@nestjs/common';
+import { Controller, Post, Body, Get, Patch, Delete, Query, Req, Param } from '@nestjs/common';
 import { TodosService } from './todos.service';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
-import { DeleteTodoDto } from './dto/delete-todo.dto';
 
-@Controller('todos')
+@Controller('todos/')
 export class TodosController {
   constructor(
     private readonly todosService: TodosService
@@ -32,9 +31,8 @@ export class TodosController {
 
   @Delete()
   delete(
-    @Param() params: any[]
+    @Query('id') id: string
   ) {
-    console.log(params);
-    return this.todosService.delete(null)
+    return this.todosService.delete(id)
   }
 }

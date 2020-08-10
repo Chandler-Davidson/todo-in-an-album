@@ -23,7 +23,8 @@ export class TodosService {
     return this.todoRepository.save(todo);
   }
 
-  delete(id: string) {
-    return this.todoRepository.delete({ id });
+  async delete(id: string) {
+    const { affected } = await this.todoRepository.delete({ id });
+    return affected > 0;
   }
 }
