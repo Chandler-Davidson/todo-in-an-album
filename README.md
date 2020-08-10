@@ -21,6 +21,10 @@ Write code as fast as possible, clean up later.
 
 If I pause the recording, its for logistical/family stuff :). 
 
+### Fixes after recording
+
+- Fixed deleting todos on the server
+  - I was missing a '/' in the path which gave me the wrong path for my query params
 
 ## Video
 
